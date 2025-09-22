@@ -1,0 +1,23 @@
+{
+  "name": "digitalbank-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Digitalbank landing page coding challenge](preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thelastcodebender21/Digital-Banking-Landing-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thelastcodebender21/Digital-Banking-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/thelastcodebender21/Digital-Banking-Landing-Page#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}

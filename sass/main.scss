@@ -1,0 +1,18 @@
+@import '../node_modules/bootstrap/scss/functions.scss';
+@import '../node_modules/bootstrap/scss/variables.scss';
+
+$new-color-themes: (
+  "primaryblue": hsl(233, 26%, 24%),
+  "primarygreen": hsl(136, 64%, 51%),
+  "primarycyan": hsl(192, 69%, 51%),
+
+  "neutrallighter-gray": hsl(0, 0%, 98%),
+  "neutrallight-gray": hsl(220, 16%, 96%),
+  "neutralgray": hsl(233, 8%, 62%)
+
+);
+
+$theme-colors: map-merge($theme-colors, $new-color-themes);
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
