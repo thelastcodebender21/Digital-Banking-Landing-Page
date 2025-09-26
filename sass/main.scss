@@ -60,3 +60,55 @@ $theme-colors: map-merge($theme-colors, $new-color-themes);
 body{
   overflow-x: hidden;
 }
+
+.custom-button{
+  background-image: linear-gradient(
+              45deg,
+              hsl(136, 64%, 51%),
+              hsl(192, 69%, 51%)
+            );
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-button:hover{
+  background-image: linear-gradient(
+      hsla(220, 14%, 96%, 0.46), /* 0.3 is the subtle opacity */
+      hsla(220, 14%, 96%, 0.46)
+    ),
+    linear-gradient(
+      45deg,
+      hsl(136, 64%, 51%),
+      hsl(192, 69%, 51%)
+    );
+}
+
+.footer-links:hover{
+  cursor: pointer;
+  color: hsl(136, 64%, 51%);
+}
+
+.nav-item{
+  position: relative;
+  
+}
+
+.navbar-links::after{
+  content: '';
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  height: 2px;
+  width: 100%;
+  background-color: hsl(136, 64%, 51%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+.navbar-links:hover::after{
+  opacity: 1;
+}
+.social-icons:hover{
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(39%) sepia(83%) saturate(749%) hue-rotate(134deg) brightness(95%) contrast(90%);
+}
