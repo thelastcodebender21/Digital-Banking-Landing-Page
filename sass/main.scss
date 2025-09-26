@@ -1,5 +1,6 @@
 @import '../node_modules/bootstrap/scss/functions.scss';
 @import '../node_modules/bootstrap/scss/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 $new-color-themes: (
   "primaryblue": hsl(233, 26%, 24%),
@@ -12,7 +13,50 @@ $new-color-themes: (
 
 );
 
+
+
+
 $theme-colors: map-merge($theme-colors, $new-color-themes);
 
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+  
+:root{
+  --bs-body-font-family: "Public Sans", sans-serif;
+
+}
+
+.box-size{
+  box-sizing: border-box;
+  height: 500px;
+  width: 400px;
+}
+
+.hero-background {
+  background-image: url('../images/bg-intro-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: auto 150%;
+  background-position: 55rem -14rem;
+  overflow: hidden;
+}
+
+.hero-background-mobile {
+  background-image: url('../images/bg-intro-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.custom-text-size{
+  font-size: 1.125rem;
+}
+
+.custom-image-size{
+  width: 80px;
+  height: 80px;
+}
+
+body{
+  overflow-x: hidden;
+}
